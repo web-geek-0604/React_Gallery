@@ -25,7 +25,7 @@ function App() {
       <ImageSearch searchText={(text) => setTerm(text)}/>
 
       {!isLoading && images.length===0 && <h1 className="text-5xl text-white text-center mx-auto">No image results</h1>}
-      {isLoading ? <img src={Loading_icon} alt="loading" className="mx-auto h-screen w-full"/> : <div className="justify-center grid m-auto grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 gap-4">
+      {isLoading ? <img src={Loading_icon} alt="loading" className="mx-auto h-screen w-full"/> : <div className="justify-center grid m-auto grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 sm:grid-cols-2 gap-4 lg:gap-6">
           {images.map(image =>(
             <ImageCard key={image.id} image={image}/>
           ))}
