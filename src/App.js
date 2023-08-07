@@ -20,7 +20,7 @@ function App() {
   }, [term]);
 
   return (
-    <div className='container mx-auto mb-[100px]'>
+    <div className='container mx-auto mb-[100px] p-5'>
       <h1 className='text-4xl text-white text-center my-10'>React Pixabay Gallery</h1>
       <ImageSearch searchText={(text) => setTerm(text)}/>
 
