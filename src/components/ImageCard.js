@@ -3,10 +3,10 @@ import React from 'react';
 const ImageCard = ({ image }) => {
   const tags = image.tags.split(',');
   return (
-    <div className="px-3 py-3 max-h-[50%]  my-2  bg-white max-w-sm rounded overflow-fidden shadow-lg">
+    <div className="px-3 py-3   my-2  bg-white max-w-sm rounded overflow-fidden shadow-lg">
     <img src={image.webformatURL} alt='prop' className='max-w-[50%]'/>
-    <div className='px-6 py-4 max-h-[50%]'>
-      <div className='max-h-[50%] font-bold text-blue-500 text-xl mb-2'>
+    <div className='px-6 py-4 '>
+      <div className=' font-bold text-blue-500 text-xl mb-2'>
         Photo by {image.user}
       </div>
       <ul>
@@ -24,7 +24,7 @@ const ImageCard = ({ image }) => {
         </li>
       </ul>
     </div>
-      <div className="max-h-[50%] px-6 py-4">
+      <div className="px-6 py-4">
         {tags.map((tag, index) =>(
                   <span key={index}  className=" text-white inline-block bg-blue-600 rounded-full px-3 py-1 m text-sm font-semibold  mx-2 my-2">
                   #{tag}
