@@ -4,7 +4,7 @@ const ImageCard = ({ image }) => {
   const tags = image.tags.split(',');
   return (
     <div className="px-3 py-3   my-2  bg-white max-w-sm rounded overflow-fidden shadow-lg">
-    <img src={image.webformatURL} alt='prop' className='max-w-[50%]'/>
+    <img src={image.webformatURL} alt='prop' className='w-full'/>
     <div className='px-6 py-4 '>
       <div className=' font-bold text-blue-500 text-xl mb-2'>
         Photo by {image.user}
