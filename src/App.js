@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className='container mx-auto mb-[100px] p-5'>
-      <h1 className='text-4xl text-white text-center my-10'>React Pixabay Gallery</h1>
+      <h1 className='text-4xl font-courgette text-white text-center my-10'>React Pixabay Gallery</h1>
       <ImageSearch searchText={(text) => setTerm(text)}/>
 
       {!isLoading && images.length===0 && <h1 className="text-5xl text-white text-center mx-auto">No image results</h1>}
