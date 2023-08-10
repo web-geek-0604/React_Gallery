@@ -30,6 +30,7 @@ function App() {
             <ImageCard key={image.id} image={image}/>
           ))}
       </div>}
+      <div className='flex justify-center items-center text-center'><p className='font-courgette my-[10px]'>Powered by PIXABAY | 2023</p></div>
     </div>
   );
 }
